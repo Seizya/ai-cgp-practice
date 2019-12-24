@@ -3,7 +3,7 @@
 Cartesian Genetic Programmingで簡易的なゲームのプレイを学習させてみる遊びです。
 
 <p align="center">
-	<a href="https://omasakun.github.io/ai-cgp-practice"><b>Try Now!</b></a>
+	<a href="https://omasakun.github.io/ai-cgp-practice/"><b>Try Now!</b></a>
 </p>
 
 ## Directory Structure
