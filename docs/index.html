@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Cartesian Genetic Programming - Practice">
+	<meta name="author" content="omasakun">
+	<title>AI CGP Practice</title>
+	<link rel="stylesheet" href="./index.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Noto+Sans+JP:300,400,700|Inconsolata:400&display=swap&subset=japanese">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/kokoro.css">
+	<script defer src="./index.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="start_view">
+			<h1 class="title">AI CGP Practice</h1>
+			<div class="card">
+				<div id="info">
+					<h2 class="header">AIを作る練習</h2>
+					<p>Cartesian Genetic Programmingで簡易的なゲームのプレイを学習させてみる遊びをするために作られたアプリです。
+					</p>
+					<button class="btn" id="begin_game">はじめる</button>
+					<hr class="-my-1em">
+					<div id="start_links">
+						<a class="link" href="https://github.com/omasakun/ai-cgp-practice" target="_blank">GitHub</a>
+						<span class="pale">The MIT License</span>
+					</div>
+				</div>
+			</div>
+			<pre id="log"># Log output
+			</pre>
+		</div>
+		<div id="game_view">
+			<canvas id="game_main_canvas"></canvas>
+		</div>
+	</div>
+</body>
+
+</html>

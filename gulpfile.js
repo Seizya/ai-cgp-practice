@@ -4,6 +4,7 @@ const intermediate = require("gulp-intermediate")
 const notify = require("gulp-notify")
 const plumber = require("gulp-plumber")
 const rename = require("gulp-rename")
+const sourcemaps = require("gulp-sourcemaps")
 const rollup = require("rollup").rollup
 
 const rollup_plugins = [
@@ -20,6 +21,8 @@ var rollup_cache
 function task_ts() {
 	return src(".tmp/ts/**/*.js", { base: ".tmp/ts" })
 		.pipe(error2notify())
+		.pipe(sourcemaps.init({ loadMaps: true }))
+		.pipe(sourcemaps.write())
 		.pipe(intermediate({ output: "bundle" }, (tempDir, done) => {
 			rollup({
 				input: `${tempDir}/index.js`,
