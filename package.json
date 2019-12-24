@@ -1,0 +1,23 @@
+{
+	"version": "0.0.0",
+	"author": "omasakun",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"tsc": "tsc -w",
+		"gulp": "gulp",
+		"serve": "gulp serve"
+	},
+	"devDependencies": {
+		"@rollup/plugin-node-resolve": "^6.0.0",
+		"gulp": "^4.0.2",
+		"gulp-intermediate": "^5.0.0",
+		"gulp-notify": "^3.2.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-rename": "^2.0.0",
+		"rollup": "^1.27.13",
+		"rollup-plugin-commonjs": "^10.1.0",
+		"rollup-plugin-sourcemaps": "^0.4.2",
+		"typescript": "^3.7.4"
+	}
+}
